@@ -1,0 +1,25 @@
+@model List<Forum.BL.Domain.User>
+
+@{
+    ViewBag.Title = "Users";
+    Layout = "_Layout";
+}
+
+<h2>Alle Users</h2>
+<table class="table">
+    <tr>
+        <th>Naam</th>
+        <th>Geboortedatum</th>
+        <th>Leeftijd</th>
+        <th>Details</th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Name</td>
+            <td>@user.DateOfBirth.ToString("yyyy-MM-dd")</td>
+            <td>@(user.Age)</td>
+            <td><a href="@Url.Action("Details", new { id = user.Id })">Details</a></td>
+        </tr>
+    }
+</table>

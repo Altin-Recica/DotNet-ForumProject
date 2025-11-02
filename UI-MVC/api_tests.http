@@ -1,0 +1,19 @@
+#Add a new comment
+POST https://localhost:7033/api/comments
+Content-Type: application/json
+
+{
+  "text": "Fake Comment",
+  "upvotes": 99,
+  "downvotes": 99
+}
+
+###
+POST https://localhost:7033/api/UserMessage/CreateUserMessage
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "messageId": 3,
+  "interactionDate": "01/01/2024"
+}

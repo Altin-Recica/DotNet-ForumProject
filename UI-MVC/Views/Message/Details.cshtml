@@ -1,0 +1,13 @@
+@model Forum.BL.Domain.Message
+
+@{
+    ViewBag.Title = "Message Details";
+    Layout = "_Layout";
+}
+
+<h2>Bericht Details</h2>
+
+<div class="info">
+    <p><strong>Inhoud:</strong> @Model.Content</p>
+    <p><strong>Type:</strong> @Model.Type</p>
+</div>

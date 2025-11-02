@@ -1,0 +1,43 @@
+@model Forum.BL.Domain.User
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "_Layout";
+}
+
+<h2>User Details</h2>
+<div class="info">
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Date of birth: </strong> @Model.DateOfBirth.ToString("dd/MM/yyyy")</p>
+    <p><strong>Age:</strong> @(Model.Age.HasValue ? Model.Age.Value.ToString() : "unknown")</p>
+</div>
+
+<h3>Messages</h3>
+
+
+<table class="table" id="messagesTable">
+</table>
+
+<h3>Add Message</h3>
+
+<form id="addMessageForm">
+    <div class="form-group">
+        <label for="messageSelect">Message</label>
+        <select class="form-control" id="messageSelect"></select>
+    </div>
+    <div class="form-group">
+        <label for="datumInput">Date</label>
+        <input type="date" class="form-control" id="datumInput">
+    </div>
+    <button type="button" class="btn btn-primary" id="addMessageButton" onclick="addMessageToUser()">Add Message to user</button>
+</form>
+
+
+@section Scripts
+{
+    <script defer src="/js/message/addMessage.js"></script>
+    <script defer src="/js/message/messageIndex.js"></script>
+}
+
+
+
