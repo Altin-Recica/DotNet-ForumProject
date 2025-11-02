@@ -1,23 +1,26 @@
-# .NET Framework Project: Gebruikersberichten
+# .NET Framework Project: User Messages
 
-* Naam: Altin Reçica
-* Onderwerp: Gebruiker * - * Bericht 1 - * Reactie(anoniem)
+* Name: Altin Reçica
+* Subject: User * - * Message 1 - * Reply (anonymous)
 
-Dit is een uitgebreid .NET-studieproject dat de ontwikkeling van een webapplicatie voor het beheren van gebruikers, berichten en reacties volgt. Het project is opgebouwd in verschillende sprints, waarbij elke fase nieuwe technologieën en concepten introduceert. Het begint met een C# console-applicatie en evolueert naar een volwaardige N-Layer applicatie met een ASP.NET Core MVC-frontend, een Web API, en database-integratie via Entity Framework. De focus ligt op het demonstreren van best practices, van architectuur en validatie tot beveiliging met Identity en het opzetten van een CI/CD-pipeline.
+This is an extensive .NET study project that follows the development of a web application for managing users, messages, and replies. The project is built in multiple sprints, with each phase introducing new technologies and concepts. It starts with a C# console application and evolves into a full N-Layer application with an ASP.NET Core MVC frontend, a Web API, and database integration via Entity Framework. The focus is on demonstrating best practices, from architecture and validation to security with Identity and setting up a CI/CD pipeline.
 
 ## Sprints
--   **Sprint 1:** Console-applicatie gebouwd met C# entiteiten en basisfunctionaliteit.
--   **Sprint 2:** Project geherstructureerd naar een N-Layer architectuur met validatieregels.
--   **Sprint 3-4:** Data opgeslagen in een SQLite-database via Entity Framework Core, inclusief het leggen van relaties.
--   **Sprint 5:** Webapplicatie gebouwd met ASP.NET Core MVC om data te tonen en nieuwe records toe te voegen.
--   **Sprint 6:** REST API toegevoegd voor asynchrone data-operaties, aangestuurd door JavaScript.
--   **Sprint 7:** Gebruikersregistratie en -login geïmplementeerd met ASP.NET Core Identity, inclusief rollen.
--   **Sprint 8:** Unit- en integration tests geschreven en een CI/CD-pipeline opgezet via GitLab.
 
-## Installatie
-1.  Clone de repository naar je lokale machine.
-2.  Open de `.sln` file in Visual Studio of JetBrains Rider.
-3.  Stel het `UI-MVC` project in als opstartproject en voer de applicatie uit.
+* **Sprint 1:** Console application built with C# entities and basic functionality.
+* **Sprint 2:** Project restructured into an N-Layer architecture with validation rules.
+* **Sprint 3-4:** Data stored in a SQLite database via Entity Framework Core, including establishing relationships.
+* **Sprint 5:** Web application built with ASP.NET Core MVC to display data and add new records.
+* **Sprint 6:** REST API added for asynchronous data operations, driven by JavaScript.
+* **Sprint 7:** User registration and login implemented with ASP.NET Core Identity, including roles.
+* **Sprint 8:** Unit and integration tests written and a CI/CD pipeline set up via GitLab.
 
-## Auteur
-**Altin Reçica** – Studieproject .NET Fundamentals
+## Installation
+
+1. Clone the repository to your local machine.
+2. Open the `.sln` file in Visual Studio or JetBrains Rider.
+3. Set the `UI-MVC` project as the startup project and run the application.
+
+## Author
+
+**Altin Reçica** – .NET Fundamentals study project
